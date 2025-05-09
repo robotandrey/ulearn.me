@@ -30,9 +30,6 @@
                 if (maxSum < currentSum)
                     maxIndex = i;
             }
-
-            
-
             return maxIndex;
         }
     }
