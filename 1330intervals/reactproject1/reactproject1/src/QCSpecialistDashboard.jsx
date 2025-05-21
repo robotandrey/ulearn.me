@@ -915,21 +915,6 @@ export default function QCSpecialistDashboard() {
                     </DialogActions>
                 </motion.div>
             </Dialog>
-
-            <Snackbar
-                open={snackbarOpen}
-                autoHideDuration={6000}
-                onClose={() => setSnackbarOpen(false)}
-                anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-            >
-                <Alert
-                    onClose={() => setSnackbarOpen(false)}
-                    severity={snackbarMessage.includes('сохранена') || snackbarMessage.includes('очищен') ? 'success' : 'error'}
-                    sx={{ width: '100%' }}
-                >
-                    {snackbarMessage}
-                </Alert>
-            </Snackbar>
         </Box>
     );
 }
